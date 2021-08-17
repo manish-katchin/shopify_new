@@ -22,9 +22,9 @@ variables:
 stages:
 - stage: Build
   displayName: Build and push stage
-  jobs:
+  jobs:  
   - job: Build
-    displayName: Build
+    displayName: Build job
     pool:
       vmImage: $(vmImageName)
     steps:
