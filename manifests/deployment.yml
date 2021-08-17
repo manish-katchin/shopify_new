@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: manishkatchinshopifynew 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: manishkatchinshopifynew
+  template:
+    metadata:
+      labels:
+        app: manishkatchinshopifynew 
+    spec:
+      containers:
+        - name: manishkatchinshopifynew 
+          image: jsprod.azurecr.io/manishkatchinshopifynew
+          ports:
+          - containerPort: 8080
