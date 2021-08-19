@@ -6,7 +6,7 @@ spec:
     type: LoadBalancer
     ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 443
     selector:
         app: backend
 
@@ -19,6 +19,6 @@ spec:
     type: ClusterIP
     ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 443
     selector:
         app: backend
