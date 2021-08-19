@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'manishkatchinshopifynew.backend'
+    environment: 'manishkatchinshopifynew.prod'
     strategy:
       runOnce:
         deploy:
