@@ -23,11 +23,6 @@ spec:
                secretKeyRef:
                   name: cosmosdb
                   key: cosmosdb_url
-           - name: PORT
-             valueFrom:
-               secretKeyRef:
-                  name: cosmosdb
-                  key: port
           resources:
              limits:
                cpu: 1000m
