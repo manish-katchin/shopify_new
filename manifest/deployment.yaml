@@ -17,13 +17,19 @@ spec:
           image: ss14suraj/test:backend-testing
           ports:
           - containerPort: 8080
+          env:
+           - name: COSMOSDB_URL
+             valueFrom:
+               secretKeyRef:
+                 name: cosmodbconnection
+                 key: COSMOSDBURL
           resources:
-             limits:
-               cpu: 1000m
-               memory: 1024Mi
-             requests:
-               cpu: 1000m
-               memory: 1024Mi
+            limits:
+              cpu: 1000m
+              memory: 1024Mi
+            requests:
+              cpu: 1000m
+              memory: 1024Mi
 
 ---
 apiVersion: autoscaling/v2beta1
