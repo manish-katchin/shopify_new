@@ -17,7 +17,7 @@ metadata:
   name: backend-ingress
 spec:
   rules:
-    - host: backend.azure.com
+    - host: backend.dfl.xyz
       http:
         paths:
           - path: /
