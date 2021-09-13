@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend 
-          image: ss14suraj/test:backend-testing
+          image: shopifywebk8registry.azurecr.io/node_backend:suraj-testing
           ports:
           - containerPort: 8080
           env:

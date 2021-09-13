@@ -1,8 +1,8 @@
 ## How to push azure ACR:
     az login
     az acr login --name shopifyWebk8Registry
-    docker build --tag shopifyWebk8Registry.azurecr.io/node_backend:<version> .
-    docker push shopifyWebk8Registry.azurecr.io/node_backend:<version>
+    docker build --tag shopifywebk8registry.azurecr.io/node_backend:<version> .
+    docker push shopifywebk8registry.azurecr.io/node_backend:<version>
 
 ## How to create variable env for backend:
 1 For prod: 
